@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Laptop</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.2.3/dist/css/bootstrap.css">
 </head>
 
-<body>
-    <!-- Card -->
-    <div class="container py-5">
-        <div class="card" style="width: 18rem;">
-            <img src="assets/img/laptop.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-center">Laptop Asus Vivobook</h5>
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Color"> 
-                </div>                    
-                <h5 class="card-title">Precio: 400000</h5>           
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-warning text-light" type="button">Calcular Total</button>                
-                </div>            
+<body>    
+    <div class="container py-5">        
+        <div class="row">
+            <div class="col"></div>
+                <!-- Card -->
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/laptop.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Laptop Asus Vivobook</h5>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="inputQuantity" placeholder="Cantidad">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="inputColor" placeholder="Color"> 
+                        </div>                    
+                        <h5 class="card-title">Precio: 400000</h5>           
+                        <div class="d-grid gap-2 col-8 mx-auto">
+                            <button class="btn btn-warning text-light" id="btn-calculate" type="button">Calcular Total</button>                
+                        </div>            
+                    </div>
             </div>
-        </div>
-    </div>   
+            <div class="col">
+                <!-- Data -->
+                <div class="data">
+                    <div>Total: $<span id="total"></span></div>
+                    <div>Cantidad: <span id="quantity"></span></div>
+                    <div>Color: <span class="dot" id="color"></span></div>
+                </div>
+            </div>
+        </div>                     
+    </div>
 
     <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="assets/css/bootstrap-5.2.3/dist/bootstrap.js"></script>
