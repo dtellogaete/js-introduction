@@ -13,9 +13,3 @@ const setData = () =>{
 };
 
 document.querySelector('#btn-calculate').addEventListener('click', setData);
-
-
-
-
-
-
