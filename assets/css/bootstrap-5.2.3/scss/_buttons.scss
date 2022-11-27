@@ -3,7 +3,7 @@
 //
 
 .btn {
-  // scss-docs-start btn-css-vars
+  // scss-docs-start btn-css-vars  
   --#{$prefix}btn-padding-x: #{$btn-padding-x};
   --#{$prefix}btn-padding-y: #{$btn-padding-y};
   --#{$prefix}btn-font-family: #{$btn-font-family};
@@ -13,7 +13,7 @@
   --#{$prefix}btn-color: #{$body-color};
   --#{$prefix}btn-bg: transparent;
   --#{$prefix}btn-border-width: #{$btn-border-width};
-  --#{$prefix}btn-border-color: transparent;
+  --#{$prefix}btn-border-color: gray;
   --#{$prefix}btn-border-radius: #{$btn-border-radius};
   --#{$prefix}btn-hover-border-color: transparent;
   --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
@@ -22,7 +22,9 @@
   // scss-docs-end btn-css-vars
 
   display: inline-block;
-  padding: var(--#{$prefix}btn-padding-y) var(--#{$prefix}btn-padding-x);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: var(--#{$prefix}btn-padding-y) var(--#{$prefix}btn-padding-x);  
   font-family: var(--#{$prefix}btn-font-family);
   @include font-size(var(--#{$prefix}btn-font-size));
   font-weight: var(--#{$prefix}btn-font-weight);
@@ -34,7 +36,8 @@
   vertical-align: middle;
   cursor: if($enable-button-pointers, pointer, null);
   user-select: none;
-  border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
+  border: 1px solid gray;
+  box-shadow: 10px 5px 5px black;
   @include border-radius(var(--#{$prefix}btn-border-radius));
   @include gradient-bg(var(--#{$prefix}btn-bg));
   @include box-shadow(var(--#{$prefix}btn-box-shadow));
